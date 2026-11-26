@@ -1,0 +1,7 @@
+column,iqr_lower_limit,iqr_upper_limit
+monthly_fee,-19.31875,112.97125
+avg_monthly_usage_gb,-32.01249999999999,117.0075
+last_payment_delay_days,-13.5,30.5
+missed_payments_12m,-1.5,2.5
+support_tickets_12m,-3.0,5.0
+avg_resolution_hours,-15.650000000000002,61.550000000000004

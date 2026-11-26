@@ -1,0 +1,2 @@
+test_pr_auc,precision_at_capacity,recall_at_capacity,f1_at_capacity,alerts,alert_rate,model
+0.9927618465102938,0.7291666666666666,0.9459459459459459,0.8235294117647058,144,0.019295189602036713,Logistic Regression (training-only SMOTE)

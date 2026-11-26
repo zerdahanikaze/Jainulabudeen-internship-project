@@ -1,0 +1,11 @@
+store_id,city,store_size,region
+S01,Seattle,Small,West
+S02,Portland,Medium,West
+S03,San Francisco,Large,West
+S04,Denver,Small,Central
+S05,Chicago,Medium,Central
+S06,Dallas,Large,Central
+S07,Atlanta,Small,East
+S08,Miami,Medium,East
+S09,Boston,Large,East
+S10,New York,Small,East

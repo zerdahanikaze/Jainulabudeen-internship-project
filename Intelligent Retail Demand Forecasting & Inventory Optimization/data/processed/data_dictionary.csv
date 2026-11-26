@@ -1,0 +1,18 @@
+file,field,definition
+actuals_vs_forecasts.csv,forecast_date,"Date being forecast (daily, rolling one-day-ahead backtest)."
+actuals_vs_forecasts.csv,store_id / product_id,Retail store and SKU keys.
+actuals_vs_forecasts.csv,actual_units,Observed units sold on forecast_date.
+actuals_vs_forecasts.csv,forecast_units,Non-negative model prediction for units sold.
+actuals_vs_forecasts.csv,unit_price / promo_flag,Observed/planned price and promotion input on that date.
+actuals_vs_forecasts.csv,model,Model that generated the forecast.
+forecast_metrics.csv,mae / rmse / r2,Test-set error metrics; lower MAE/RMSE and higher R-squared are preferred.
+forecast_metrics.csv,validation_mae,Validation MAE used for model parameter selection.
+inventory_risk.csv,current_stock_on_hand / reorder_point,Latest synthetic stock and policy threshold.
+inventory_risk.csv,avg_daily_forecast_units,Mean forecast over the latest 28 test dates from the best-MAE model.
+inventory_risk.csv,lead_time_demand_units,Average daily forecast multiplied by product lead time.
+inventory_risk.csv,expected_stockout_units,"Positive lead-time demand less on-hand stock; a planning exposure, not a lost-sales observation."
+inventory_risk.csv,inventory_coverage_days,On-hand units divided by average forecast demand per day.
+inventory_risk.csv,reorder_priority_score,0-100 unmet share of lead-time demand; 100 denotes zero on-hand stock.
+demand_statistics.csv,mean / median / std / q1 / q3 / iqr,Descriptive statistics over the completed daily panel.
+product_demand_variability.csv,coefficient_of_variation,Product standard deviation divided by mean daily units.
+error_analysis_by_product.csv and error_analysis_by_store.csv,mae / rmse / r2,Test error slices for the globally best-MAE model.

@@ -1,0 +1,2 @@
+mean,median,std,q1,q3,iqr,spike_threshold_units,spike_observation_count
+9.432416438356164,7.0,8.359259114760738,4.0,13.0,9.0,40.0,2990

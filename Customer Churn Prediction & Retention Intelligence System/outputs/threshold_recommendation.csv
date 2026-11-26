@@ -1,0 +1,2 @@
+selected_model,optimal_threshold,validation_min_cost,missed_churn_cost,retention_offer_cost,justification
+Logistic Regression,0.18,22300,500,50,Minimizes estimated ₹500 missed-churn cost plus ₹50 unnecessary-offer cost on validation data.

@@ -1,0 +1,77 @@
+-- Project 01 Power BI DAX measures
+
+Churn Count =
+SUM ( DimCustomer[churn_flag] )
+
+Total Customers =
+COUNTROWS ( DimCustomer )
+
+Churn Rate % =
+DIVIDE ( [Churn Count], [Total Customers], 0 )
+
+High Risk Customer Count =
+CALCULATE (
+    COUNTROWS ( DimCustomer ),
+    TREATAS (
+        {"High", "Critical"},
+        DimCustomer[retention_risk_segment]
+    )
+)
+
+-- Alternative direct relationship approach:
+-- High Risk Customer Count =
+-- CALCULATE (
+--     COUNTROWS ( DimCustomer ),
+--     DimCustomer[retention_risk_segment] IN {"High", "Critical"}
+-- )
+
+Average Churn Probability =
+AVERAGE ( FactChurnScore[churn_probability] )
+
+Expected Monthly Churners =
+ROUND (
+    [Total Customers] * [Average Churn Probability],
+    0
+)
+
+Retained Customers Estimate =
+VAR HighRiskCount = [High Risk Customer Count]
+VAR Capacity = [Monthly Retention Capacity Value]
+VAR RetentionRate = [Monthly Retention Success Rate %] / 100
+RETURN
+ROUND (
+    MIN ( HighRiskCount, Capacity ) * RetentionRate,
+    0
+)
+
+Monthly Retention Cost =
+[Monthly Retention Capacity Value] * [Retention Offer Cost]
+
+-- What-If parameter:
+-- In Power BI: Modeling > New Parameter > Numeric range
+-- Name: Monthly Retention Capacity
+-- Minimum: 0; Maximum: 500; Increment: 10; Default: 100
+-- The generated table will create these measures:
+-- 'Monthly Retention Capacity'[Monthly Retention Capacity]
+-- 'Monthly Retention Capacity Value' =
+-- SELECTEDVALUE ( 'Monthly Retention Capacity'[Monthly Retention Capacity], 100 )
+
+-- What-If success rate parameter:
+-- Modeling > New Parameter > Numeric range
+-- Minimum: 0.05; Maximum: 0.60; Increment: 0.05; Default: 0.25
+-- 'Monthly Retention Success Rate %'[Monthly Retention Success Rate %]
+
+-- Cost parameter:
+-- Modeling > New Parameter > Numeric range
+-- Minimum: 10; Maximum: 200; Increment: 10; Default: 50
+-- 'Retention Offer Cost'[Retention Offer Cost]
+
+Retention ROI Estimate =
+VAR Retained = [Retained Customers Estimate]
+VAR MonthlyRevenueSaved = Retained * AVERAGE ( DimCustomer[monthly_fee] )
+VAR Cost = [Monthly Retention Cost]
+RETURN
+DIVIDE ( MonthlyRevenueSaved - Cost, Cost, 0 )
+
+-- Apply the Indian rupee format string to retention cost and revenue measures
+-- in Power BI: Format = Currency, Symbol = Indian Rupee (₹), Decimal places = 0

@@ -1,0 +1,7 @@
+department_id,department_name,facility_id,facility_name
+CARD,Cardiology,FAC-01,North Medical Center
+EMER,Emergency Medicine,FAC-01,North Medical Center
+MED,General Medicine,FAC-02,Central Hospital
+NEURO,Neurology,FAC-02,Central Hospital
+ORTHO,Orthopedics,FAC-03,West Clinic
+SURG,Surgery,FAC-03,West Clinic

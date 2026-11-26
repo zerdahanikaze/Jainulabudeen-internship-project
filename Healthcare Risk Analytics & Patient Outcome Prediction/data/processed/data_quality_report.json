@@ -1,0 +1,33 @@
+{
+  "input_rows": 12000,
+  "duplicate_encounter_ids_removed": 120,
+  "analysis_rows": 11880,
+  "validated_measurement_units": {
+    "length_of_stay_days": "days",
+    "systolic_bp": "mmHg",
+    "heart_rate": "beats/minute",
+    "glucose_mg_dl": "mg/dL",
+    "bmi": "kg/m^2",
+    "comorbidity_count": "count",
+    "prior_admissions_12m": "count in prior 12 months"
+  },
+  "invalid_measurements_by_column": {
+    "length_of_stay_days": 0,
+    "systolic_bp": 28,
+    "heart_rate": 24,
+    "glucose_mg_dl": 25,
+    "bmi": 24,
+    "comorbidity_count": 0,
+    "prior_admissions_12m": 0
+  },
+  "missing_values_by_column": {
+    "length_of_stay_days": 0,
+    "systolic_bp": 28,
+    "heart_rate": 24,
+    "glucose_mg_dl": 498,
+    "bmi": 24,
+    "comorbidity_count": 0,
+    "prior_admissions_12m": 0
+  },
+  "outcome_rate": 0.17929292929292928
+}

@@ -1,0 +1,139 @@
+model,feature,importance
+Logistic Regression,cat__subscription_plan_Premium,0.32409943692585397
+Logistic Regression,num__last_payment_delay_days,0.3044801734235246
+Logistic Regression,cat__payment_method_Electronic Check,0.2855226116623389
+Logistic Regression,cat__tenure_band_0-6,0.2835285931685149
+Logistic Regression,num__month_to_month,0.2329200725428444
+Logistic Regression,cat__tenure_band_7-12,0.23144563865785547
+Logistic Regression,num__high_support_contact,0.22080609438588217
+Logistic Regression,cat__contract_type_Month-to-Month,0.2048903754785223
+Logistic Regression,num__low_usage_flag,0.18036181628232462
+Logistic Regression,num__total_late_fees,0.16350527799888698
+Logistic Regression,num__monthly_fee,0.15543510935306756
+Logistic Regression,cat__region_West,0.12993544196267642
+Logistic Regression,cat__subscription_plan_Basic,0.12872299433857193
+Logistic Regression,cat__tenure_band_13-24,0.11875247355936402
+Logistic Regression,cat__tenure_band_25-48,0.11780126531479537
+Logistic Regression,cat__tenure_band_49+,0.11494658224424781
+Logistic Regression,num__avg_monthly_usage_gb,0.11483472780731083
+Logistic Regression,num__negative_usage_trend,0.10310756471221083
+Logistic Regression,cat__payment_method_Debit Card,0.09333774056242132
+Logistic Regression,num__missed_payments_12m,0.081770342190404
+Logistic Regression,num__payment_delay_count_12m,0.081770342190404
+Logistic Regression,cat__region_Unknown,0.07779854476294026
+Logistic Regression,num__open_tickets,0.07073935487422542
+Logistic Regression,cat__contract_type_One Year,0.054126961732589615
+Logistic Regression,cat__region_South,0.04686687123138376
+Logistic Regression,num__billing_issue_count,0.04606905627878755
+Logistic Regression,cat__payment_method_Credit Card,0.04477982118455435
+Logistic Regression,num__avg_resolution_hours,0.03245129973876398
+Logistic Regression,cat__subscription_plan_Standard,0.031902531879317866
+Logistic Regression,num__is_two_year,0.02790809979553601
+Logistic Regression,num__support_tickets_12m,0.023299941481485672
+Logistic Regression,num__support_contact_frequency,0.023299941481485672
+Logistic Regression,num__age,0.0215805333637616
+Logistic Regression,num__satisfaction_score,0.021249462405438443
+Logistic Regression,num__tenure_years,0.020691243900904592
+Logistic Regression,num__tenure_months,0.020691243900903718
+Logistic Regression,cat__region_North,0.01701345858452917
+Logistic Regression,cat__region_East,0.017013195822955487
+Logistic Regression,cat__payment_method_Unknown,0.016834284259714654
+Logistic Regression,num__add_on_count,0.014972762759173416
+Logistic Regression,cat__contract_type_Two Year,0.01271049696203079
+Logistic Regression,num__high_payment_delay,0.012335388795471676
+Logistic Regression,num__usage_trend_6m,0.003909928938055199
+Logistic Regression,num__usage_decline_rate,0.003909928938055199
+Logistic Regression,cat__region_Central,0.002606532452158023
+Logistic Regression,cat__payment_method_Bank Transfer,0.0007654234671140122
+Decision Tree,num__missed_payments_12m,0.1667043539610869
+Decision Tree,num__avg_monthly_usage_gb,0.14003493204257472
+Decision Tree,num__avg_resolution_hours,0.09701341114674321
+Decision Tree,num__support_contact_frequency,0.09688799628829178
+Decision Tree,cat__contract_type_Month-to-Month,0.0847004617186405
+Decision Tree,num__last_payment_delay_days,0.07708158708255414
+Decision Tree,num__usage_decline_rate,0.07230205831774295
+Decision Tree,num__age,0.0446704456693071
+Decision Tree,num__usage_trend_6m,0.043545983316288936
+Decision Tree,num__tenure_years,0.03875338769864542
+Decision Tree,num__monthly_fee,0.03108859134993343
+Decision Tree,num__tenure_months,0.030128498907143583
+Decision Tree,num__satisfaction_score,0.025951047410761176
+Decision Tree,num__month_to_month,0.015614054101001673
+Decision Tree,cat__payment_method_Credit Card,0.012060759132173957
+Decision Tree,num__total_late_fees,0.011933098783938187
+Decision Tree,num__support_tickets_12m,0.006057801939071275
+Decision Tree,cat__subscription_plan_Standard,0.00547153113410108
+Decision Tree,num__add_on_count,0.0
+Decision Tree,num__billing_issue_count,0.0
+Decision Tree,num__open_tickets,0.0
+Decision Tree,num__high_payment_delay,0.0
+Decision Tree,num__payment_delay_count_12m,0.0
+Decision Tree,num__negative_usage_trend,0.0
+Decision Tree,num__high_support_contact,0.0
+Decision Tree,num__is_two_year,0.0
+Decision Tree,num__low_usage_flag,0.0
+Decision Tree,cat__region_Central,0.0
+Decision Tree,cat__region_East,0.0
+Decision Tree,cat__region_North,0.0
+Decision Tree,cat__region_South,0.0
+Decision Tree,cat__region_Unknown,0.0
+Decision Tree,cat__region_West,0.0
+Decision Tree,cat__subscription_plan_Basic,0.0
+Decision Tree,cat__subscription_plan_Premium,0.0
+Decision Tree,cat__contract_type_One Year,0.0
+Decision Tree,cat__contract_type_Two Year,0.0
+Decision Tree,cat__tenure_band_0-6,0.0
+Decision Tree,cat__tenure_band_13-24,0.0
+Decision Tree,cat__tenure_band_25-48,0.0
+Decision Tree,cat__tenure_band_49+,0.0
+Decision Tree,cat__tenure_band_7-12,0.0
+Decision Tree,cat__payment_method_Bank Transfer,0.0
+Decision Tree,cat__payment_method_Debit Card,0.0
+Decision Tree,cat__payment_method_Electronic Check,0.0
+Decision Tree,cat__payment_method_Unknown,0.0
+Random Forest,num__last_payment_delay_days,0.0870865578759904
+Random Forest,num__avg_monthly_usage_gb,0.08286620721372705
+Random Forest,num__total_late_fees,0.05273807319739117
+Random Forest,num__monthly_fee,0.05200904196761677
+Random Forest,num__missed_payments_12m,0.050127813759378935
+Random Forest,num__payment_delay_count_12m,0.04779685257695165
+Random Forest,num__avg_resolution_hours,0.04737380525889774
+Random Forest,num__usage_trend_6m,0.04172807248688547
+Random Forest,cat__contract_type_Month-to-Month,0.04166989123650594
+Random Forest,num__usage_decline_rate,0.040453221841100555
+Random Forest,num__tenure_years,0.04037195967927282
+Random Forest,num__tenure_months,0.039315562131102565
+Random Forest,num__month_to_month,0.03803369827753867
+Random Forest,num__support_contact_frequency,0.03483587102457145
+Random Forest,num__satisfaction_score,0.03324583423748355
+Random Forest,num__age,0.03237227490287967
+Random Forest,num__support_tickets_12m,0.032197426188508765
+Random Forest,num__high_payment_delay,0.028505671161362833
+Random Forest,num__high_support_contact,0.023339357415452552
+Random Forest,num__low_usage_flag,0.02027611424246496
+Random Forest,num__open_tickets,0.018172898220319353
+Random Forest,cat__contract_type_One Year,0.017540704527686773
+Random Forest,num__add_on_count,0.014988739794912432
+Random Forest,cat__payment_method_Credit Card,0.007725146619397235
+Random Forest,num__is_two_year,0.0068365663707100535
+Random Forest,cat__subscription_plan_Standard,0.006252057140918966
+Random Forest,cat__subscription_plan_Basic,0.00606664241964317
+Random Forest,num__negative_usage_trend,0.005920708382767617
+Random Forest,cat__contract_type_Two Year,0.005640898937197421
+Random Forest,cat__payment_method_Electronic Check,0.005583295531697492
+Random Forest,cat__tenure_band_25-48,0.005043578861491781
+Random Forest,cat__tenure_band_13-24,0.004214455733488422
+Random Forest,cat__region_West,0.003938378097923374
+Random Forest,cat__region_South,0.002890023402865604
+Random Forest,num__billing_issue_count,0.0028067228391743648
+Random Forest,cat__payment_method_Debit Card,0.0027937238125498127
+Random Forest,cat__payment_method_Bank Transfer,0.002711606689099687
+Random Forest,cat__tenure_band_49+,0.0025085478500319626
+Random Forest,cat__subscription_plan_Premium,0.0022810382586459623
+Random Forest,cat__region_North,0.0022436678747068135
+Random Forest,cat__tenure_band_0-6,0.0021882123322246594
+Random Forest,cat__region_East,0.0018062099388667765
+Random Forest,cat__region_Central,0.0017352889828525183
+Random Forest,cat__tenure_band_7-12,0.0016286147729229839
+Random Forest,cat__region_Unknown,0.000138965932821367
+Random Forest,cat__payment_method_Unknown,0.0

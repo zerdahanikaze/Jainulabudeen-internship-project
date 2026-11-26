@@ -1,0 +1,5 @@
+model,threshold,true_negative,false_positive,false_negative,true_positive
+Logistic Regression,0.5,247,200,154,399
+Logistic Regression,0.18,0,447,0,553
+Decision Tree,0.5,211,236,176,377
+Random Forest,0.5,221,226,138,415

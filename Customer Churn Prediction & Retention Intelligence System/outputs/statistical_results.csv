@@ -1,0 +1,8 @@
+test,statistic,p_value,detail
+Chi-square: churn vs contract_type,125.76630995919874,4.899962853815718e-28,dof=2
+Chi-square: churn vs subscription_plan,2.7170753502251306,0.25703637295007903,dof=2
+Chi-square: churn vs payment_method,16.38292512722117,0.002546112755246031,dof=4
+Mann-Whitney U: retained vs churned tenure_months,3210036.0,0.018411089515323005,retained median=31.00; churned median=30.00
+Mann-Whitney U: retained vs churned avg_monthly_usage_gb,3451890.0,1.0602153309935355e-12,retained median=41.84; churned median=37.09
+Mann-Whitney U: retained vs churned missed_payments_12m,2582334.0,3.9752217311830207e-38,retained median=0.00; churned median=0.00
+Mann-Whitney U: retained vs churned support_tickets_12m,2691044.5,3.130743037201936e-21,retained median=0.00; churned median=0.00
